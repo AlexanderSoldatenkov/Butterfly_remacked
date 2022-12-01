@@ -14,7 +14,6 @@
 
 }
 
-
 .navigation {
   &__name {
     font-family: 'Montserrat';
@@ -26,7 +25,7 @@
     display: flex;
     align-items: center;
     color: $second-font-color;
-    margin-bottom: 10px;
+    margin-right: 32px;
   }
 
   &__logo {
@@ -48,35 +47,21 @@
   &__block {
     display: flex;
     justify-content: space-between;
-    // margin: 10px 0 10px 0;
-  }
-
-  &_line {
-    background-color: rgb(220, 203, 92);
-    width: auto;
-    height: 2px;
-    border: none;
-
+    align-items: center;
+    width: 1250px;
   }
 
   &__menu {
     list-style-type: none;
     text-decoration: none;
-    // display: flex;
-    // display: inline-flex;
-    // justify-content: center;
     margin-top: 10px;
     width: 100%;
     display: flex;
+    // align-items: center;
     flex-wrap: wrap;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 25px;
-    /* or 156% */
-    text-transform: uppercase;
-    color: #00B9FF;
+    column-gap: 5px;
+
+    margin-left: 36px;
 
     &_item {
       margin-left: 15px;
@@ -90,6 +75,15 @@
     }
 
     &_link {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 25px;
+      text-transform: uppercase;
+      color: $counter;
+      text-decoration: none !important;
+
       a {
         text-decoration: none;
       }
@@ -102,21 +96,17 @@
 }
 
 .smart-home {
-
-
   &__background {
-    // margin-top: 122px;
     min-height: 645px;
     object-fit: cover;
     background: url("../img/background/background_1.png") no-repeat 100%/cover;
   }
 
-
-
   &__h1 {
     position: absolute;
     left: 66px;
     top: 354px;
+    width: 863px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -128,7 +118,7 @@
   }
 
   &__h2 {
-    width: 943px;
+    width: 863px;
     position: absolute;
     left: 66px;
     top: 460px;
@@ -144,10 +134,9 @@
   &__back {
     position: absolute;
     left: 0px;
-    top: 381px;
+    top: 340px;
     width: 1100px;
     height: 228px;
     background-color: $square-background;
-
   }
 }

@@ -1,0 +1,370 @@
+.header {
+  &__bg {
+    top: 0;
+    min-height: 115px;
+    width: 100%;
+    background-color: $background;
+    position: sticky;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    border-bottom: 7px solid;
+    border-color: $counter;
+  }
+
+}
+
+.navigation {
+  &__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: $second-font-color;
+    margin-right: 32px;
+    text-decoration: none;
+  }
+
+  &__logo {
+    width: 298px;
+    height: 75px;
+
+    &_right {
+      width: 176px;
+      height: 58px;
+    }
+
+    &_align {
+      display: flex;
+      flex-direction: row;
+
+      // a {
+      //   text-decoration: none;
+      // }
+    }
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 1250px;
+  }
+
+  &__menu {
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    // align-items: center;
+    flex-wrap: wrap;
+    column-gap: 5px;
+
+    margin-left: 36px;
+
+    &_item {
+      margin-left: 15px;
+
+
+      a {
+        &:hover {
+          color: $second-font-color;
+        }
+      }
+    }
+
+    &_link {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 25px;
+      text-transform: uppercase;
+      color: $counter;
+      text-decoration: none !important;
+
+      a {
+        text-decoration: none;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.smart-home {
+  &__background {
+    min-height: 645px;
+    object-fit: cover;
+    background: url("../img/background/background_1.png") no-repeat 100%/cover;
+  }
+
+  &__h1 {
+    position: absolute;
+    left: 66px;
+    top: 354px;
+    width: 863px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 67px;
+    line-height: 82px;
+    text-transform: uppercase;
+    color: $first-font-color;
+    z-index: 1;
+  }
+
+  &__h2 {
+    width: 863px;
+    position: absolute;
+    left: 66px;
+    top: 460px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: $first-font-color;
+  }
+
+  &__back {
+    position: absolute;
+    left: 0px;
+    top: 340px;
+    width: 1100px;
+    height: 228px;
+    background-color: $square-background;
+  }
+}
+
+.smart-home {
+  &_1 {
+    position: absolute;
+    right: 0;
+    top: 116px;
+    z-index: 2;
+  }
+
+  &_2 {
+    position: absolute;
+    left: 0;
+    top: 824px;
+    z-index: 2;
+  }
+
+  &_3 {
+    position: absolute;
+    right: 0;
+    top: 333px;
+    z-index: 2;
+  }
+
+  &_4 {
+    position: absolute;
+    right: 0;
+    top: 988px;
+    z-index: 4;
+  }
+
+  &_5 {
+    position: absolute;
+    left: 0;
+    top: 2016px;
+    z-index: 2;
+  }
+
+  &__background {
+    // margin-top: 122px;
+    min-height: 645px;
+    object-fit: cover;
+    background: url("/img/background/background_1.png") no-repeat 100%/cover;
+  }
+
+
+
+  &__h1 {
+    position: absolute;
+    left: 66px;
+    top: 354px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 67px;
+    line-height: 82px;
+    text-transform: uppercase;
+    color: $first-font-color;
+  }
+
+  &__h2 {
+    width: 943px;
+    position: absolute;
+    left: 66px;
+    top: 460px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: $first-font-color;
+  }
+
+  &__back {
+    position: absolute;
+    left: 0px;
+    top: 441px;
+    width: 1100px;
+    height: 228px;
+    background-color: $square-background;
+
+  }
+
+  &__second-part {
+    // width: 1920px;
+    object-fit: cover;
+    min-height: 302px;
+    // background: url("/img/wallpaperflare.com_wallpaper.jpg") no-repeat 100%/cover;
+
+
+    &_descr {
+      display: block;
+      margin: 0 auto;
+      padding-top: 49px;
+      width: 645px;
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: black;
+
+      span {
+        font-family: 'Montserrat';
+        font-style: normal;
+
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__third-part {
+    position: relative;
+    object-fit: cover;
+    min-height: 362px;
+    background: url("/img/background/background_2.png") no-repeat 100%/cover;
+    padding-top: 264px;
+    z-index: 3;
+
+    &_overlay {
+      position: absolute;
+      right: 0px;
+      top: 129px;
+      width: 880px;
+      height: 166px;
+      background-color: $square-background;
+      z-index: 1;
+    }
+
+    &_overlay-3 {
+      position: absolute;
+      left: 0px;
+      top: 1755px;
+      width: 857px;
+      height: 166px;
+      background-color: $square-background;
+      z-index: 1;
+    }
+
+    &_btn {
+      display: block;
+      margin: 0 auto;
+      width: 332px;
+      height: 61px;
+      z-index: 3;
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      background-color: $second-font-color;
+      color: $first-font-color;
+      box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      border: none;
+    }
+
+
+  }
+
+  &__four-part {
+    padding-top: 232px;
+    object-fit: cover;
+    min-height: 362px;
+    background: url("/img/background/background_3.png") no-repeat 100%/cover;
+
+    &_display {
+      display: flex;
+    }
+
+    &_btn {
+      width: 434px;
+    }
+  }
+}
+
+.counter {
+  // position: relative;
+  // z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 224px;
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__number {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61px;
+    // line-height: 74px;
+    text-align: center;
+    color: $counter;
+
+    span {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      color: $third-font-color;
+    }
+  }
+
+  &__descr {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: $third-font-color;
+  }
+}

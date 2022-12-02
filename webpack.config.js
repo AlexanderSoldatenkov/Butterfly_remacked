@@ -42,27 +42,27 @@ const plugins = () => {
         collapseWhitespace: isProd
       }
     }),
-    new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/history.html'),
-      filename: 'history.html',
-      minify: {
-        collapseWhitespace: isProd
-      }
-    }),
-    new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/catalog.html'),
-      filename: 'catalog.html',
-      minify: {
-        collapseWhitespace: isProd
-      }
-    }),
-    new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/catalog_item.html'),
-      filename: 'catalog_item.html',
-      minify: {
-        collapseWhitespace: isProd
-      }
-    }),
+    // new HTMLWebpackPlugin({
+    //   template: path.resolve(__dirname, 'src/history.html'),
+    //   filename: 'history.html',
+    //   minify: {
+    //     collapseWhitespace: isProd
+    //   }
+    // }),
+    // new HTMLWebpackPlugin({
+    //   template: path.resolve(__dirname, 'src/catalog.html'),
+    //   filename: 'catalog.html',
+    //   minify: {
+    //     collapseWhitespace: isProd
+    //   }
+    // }),
+    // new HTMLWebpackPlugin({
+    //   template: path.resolve(__dirname, 'src/catalog_item.html'),
+    //   filename: 'catalog_item.html',
+    //   minify: {
+    //     collapseWhitespace: isProd
+    //   }
+    // }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: `./css/${filename('css')}`

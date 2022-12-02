@@ -1,10 +1,9 @@
 @import './variables/variables';
-@import './base.scss';
+// @import './base.scss';
 @import './media.scss';
 
-@import './blocks/header';
+@import './header';
 // @import './blocks/smart-home';
-@import './blocks/maps';
-@import './blocks/footer';
-@import './history/history';
-@import './catalog/catalog';
+@import './footer';
+// @import './history/history';
+// @import './catalog/catalog';

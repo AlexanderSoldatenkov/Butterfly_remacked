@@ -37,6 +37,8 @@
     "imagemin-webpack": "^2.0.0",
     "mini-css-extract-plugin": "^2.6.0",
     "node-sass": "^7.0.1",
+    "sass": "^1.49.11",
+    "sass-loader": "^12.6.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.2.0",

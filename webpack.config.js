@@ -5,7 +5,6 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack');
 
@@ -13,7 +12,6 @@ const ImageminPlugin = require('imagemin-webpack');
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
 
-// const filename = (ext) => `[name].${ext}`; 
 const filename = (ext) => isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`;
 
 const optimization = () => {
@@ -25,7 +23,6 @@ const optimization = () => {
 
   if (isProd) {
     configObj.minimizer = [
-      new OptimizeCssAssetWebpackPlugin(),
       new TerserWebpackPlugin()
     ];
   }
@@ -42,65 +39,15 @@ const plugins = () => {
         collapseWhitespace: isProd
       }
     }),
-    // new HTMLWebpackPlugin({
-    //   template: path.resolve(__dirname, 'src/history.html'),
-    //   filename: 'history.html',
-    //   minify: {
-    //     collapseWhitespace: isProd
-    //   }
-    // }),
-    // new HTMLWebpackPlugin({
-    //   template: path.resolve(__dirname, 'src/catalog.html'),
-    //   filename: 'catalog.html',
-    //   minify: {
-    //     collapseWhitespace: isProd
-    //   }
-    // }),
-    // new HTMLWebpackPlugin({
-    //   template: path.resolve(__dirname, 'src/catalog_item.html'),
-    //   filename: 'catalog_item.html',
-    //   minify: {
-    //     collapseWhitespace: isProd
-    //   }
-    // }),
+
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: `./css/${filename('css')}`
     }),
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     {from: path.resolve(__dirname, 'src/assets') , to: path.resolve(__dirname, 'dist/assets')}
-    //   ]
-    // }),
-    // new webpack.NoErrorsPlugin(),
+    
   ];
 
-  // if (isProd) {
-    
-  //   basePlugins.push(
-  //     new ImageminPlugin({
-  //       bail: false, // Ignore errors on corrupted images
-  //       cache: true,
-  //       imageminOptions: {
-  //         plugins: [
-  //           ["gifsicle", { interlaced: true }],
-  //           ["jpegtran", { progressive: true }],
-  //           ["optipng", { optimizationLevel: 5 }],
-  //           [
-  //             "svgo",
-  //             {
-  //               plugins: [
-  //                 {
-  //                   removeViewBox: false
-  //                 }
-  //               ]
-  //             }
-  //           ]
-  //         ]
-  //       }
-  //     })
-  //   );
-  // }
+  
 
   return basePlugins;
 };
@@ -158,20 +105,6 @@ module.exports = {
           'sass-loader'
         ],
       },
-      // {
-      //   test: /\.js$/,
-      //   exclude: /node_modules/,
-      //   loader: 'babel-loader',
-      // },
-      // {
-      //   test: /\.(?:|gif|png|jpg|jpeg|svg)$/,
-      //   use: [{
-      //     loader: 'file-loader',
-      //     options: {
-      //       name: `[path]${filename('[ext]')}`
-      //     }
-      //   }],
-      // },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',

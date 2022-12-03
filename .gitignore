@@ -5,12 +5,14 @@
 
 # testing
 /coverage
-/editorconfig
+
 
 # production
 /build
 /dist
 
+#configurations
+/.editorconfig
 
 # misc
 .cache

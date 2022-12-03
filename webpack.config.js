@@ -2,11 +2,8 @@
 
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-// const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
-// const TerserWebpackPlugin = require('terser-webpack-plugin');
-// const ImageminPlugin = require('imagemin-webpack');
+
 
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -21,11 +18,6 @@ const optimization = () => {
     }
   };
 
-  // if (isProd) {
-  //   configObj.minimizer = [
-  //     new TerserWebpackPlugin()
-  //   ];
-  // }
 
   return configObj;
 };
@@ -40,7 +32,6 @@ const plugins = () => {
       }
     }),
 
-    // new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: `./css/${filename('css')}`
     }),

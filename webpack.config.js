@@ -3,7 +3,7 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 // const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const CopyWebpackPlugin = require('copy-webpack-plugin');
 // const TerserWebpackPlugin = require('terser-webpack-plugin');
 // const ImageminPlugin = require('imagemin-webpack');
@@ -41,9 +41,9 @@ const plugins = () => {
     }),
 
     // new CleanWebpackPlugin(),
-    // new MiniCssExtractPlugin({
-    //   filename: `./css/${filename('css')}`
-    // }),
+    new MiniCssExtractPlugin({
+      filename: `./css/${filename('css')}`
+    }),
     
   ];
 
@@ -80,7 +80,7 @@ module.exports = {
         test: /\.css$/i,
         use: [
           {
-            // loader: MiniCssExtractPlugin.loader,
+            loader: MiniCssExtractPlugin.loader,
             options: {
               hmr: isDev
             },
@@ -92,7 +92,7 @@ module.exports = {
         test: /\.s[ac]ss$/,
         use: [
           {
-            // loader: MiniCssExtractPlugin.loader,
+            loader: MiniCssExtractPlugin.loader,
             options: {
               publicPath: (resourcePath, context) => {
                 return path.relative(path.dirname(resourcePath), context) + '/';

@@ -12,7 +12,7 @@
 /dist
 
 #configurations
-/.editorconfig
+.editorconfig
 
 # misc
 .cache

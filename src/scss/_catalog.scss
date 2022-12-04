@@ -105,12 +105,9 @@
       padding: 0 0px;
       padding-top: 15px;
       padding-left: 20px;
-      font-size: 18px;
-      font-weight: bold;
       outline: none;
       display: block;
       border: none;
-      border-radius: 10px;
       overflow: visible;
       list-style-type: none;
       background: $background;
@@ -126,7 +123,7 @@
     }
 
     &__input {
-      width: 296px;
+      // width: 296px;
       height: 53px;
       padding: 0 0px;
       padding-left: 20px;

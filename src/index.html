@@ -5,48 +5,157 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Умный Дом бабочек</title>
-
+  <!-- CSS only -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="./scss/reset.scss">
-  <link rel="stylesheet" href="./scss/header.scss">
-  <link rel="stylesheet" href="./scss/index.scss">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./img/logo/32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/logo/16.png"> -->
 
 </head>
 
 <body>
+
   <nav class="header__bg">
     <div class="container">
       <div class="navigation__block">
         <img src="./img/logo/logo.png" alt="#" class="navigation__logo">
         <ul class="navigation__menu">
-          <li class="navigation__menu_item"><a href="# " class="navigation__menu_link">Главная</a></li>
+          <li class="navigation__menu_item"><a href="./index.html " class="navigation__menu_link">Главная</a></li>
           <li class="navigation__menu_item"><a href="#" class="navigation__menu_link">О нас</a></li>
-          <li class="navigation__menu_item"><a href="#" class="navigation__menu_link">Коллекция
+          <li class="navigation__menu_item"><a href="./catalog.html" class="navigation__menu_link">Коллекция
               бабочек</a></li>
-          <li class="navigation__menu_item"><a href="#" class="navigation__menu_link">VR приложение</a></li>
-          <li class="navigation__menu_item"><a href="#" class="navigation__menu_link">Исследования и
+          <li class="navigation__menu_item"><a href="./catalog_item.html" class="navigation__menu_link">VR
+              приложение</a></li>
+          <li class="navigation__menu_item"><a href="./history.html" class="navigation__menu_link">Исследования и
               публикации</a>
           </li>
           <li class="navigation__menu_item"><a href="#" class="navigation__menu_link">Контакты</a></li>
         </ul>
         <div class="navigation__logo_align">
-          <div class="navigation__name">Ru|En</div>
+          <a href="#" class="navigation__name">Ru|En</a>
           <img src="./img/logo/logo-right.png" class="navigation__logo_right">
         </div>
       </div>
     </div>
+
   </nav>
 
-  <div alt="#" class="smart-home__background"></div>
-  <div class="container">
-    <h1 class="smart-home__h1">Умный дом бабочек</h1>
-    <div class="smart-home__back"></div>
-    <h2 class="smart-home__h2">Выставка бабочек и зал виртуальной реальности</h2>
-  </div>
+  <section class="smart-home">
+
+    <div alt="#" class="smart-home__background">
+      <div class="container">
+        <h1 class="smart-home__h1">Умный дом бабочек</h1>
+        <div class="smart-home__back"></div>
+        <h2 class="smart-home__h2">Выставка бабочек <br> и зал виртуальной реальности</h2>
+      </div>
+      <img src="./img/background/background_1_vector.png" alt="#" class="smart-home_1">
+    </div>
+
+
+    <div class="smart-home__second-part">
+      <div class="container">
+        <div class="smart-home__second-part_descr">На территории <span>«Умного дома бабочек»</span> будет размещена
+          комбинированная
+          экспозиция, включающая в себя выставку бабочек и зал виртуальной реальности, где с помощью специальных
+          технических средств можно будет ознакомиться с цифровой копией коллекции чешуекрылых.
+          Знакомство с уникальной коллекцией чешуекрылых может представлять интерес для школьников, студентов, жителей и
+          гостей нашего города.
+          «Умный Дом Бабочек» объединит в себе научные достижения и популяризацию науки, а в перспективе
+          может стать
+          одной из визитных карточек региона.
+        </div>
+      </div>
+
+    </div>
+    <img src="./img/background/background_2_vector.png" alt="#" class="smart-home_2">
+    <img src="./img/background/background_3_vector.png" alt="#" class="smart-home_3">
+
+    <div class="smart-home__third-part">
+
+      <div class="container smart-home__four-part_display">
+
+        <div class="smart-home__third-part_overlay"></div>
+        <button class="smart-home__third-part_btn">Осмотреть коллекцию</button>
+      </div>
+    </div>
+    <!-- <img src="./img/background/background_4_vector.png" alt="#" class="smart-home_4"> -->
+    <div class="container">
+      <div class="counter">
+
+        <div class="counter__element">
+          <div class="counter__number">5<span>-ая</span></div>
+          <div class="div counter__descr">по численности в России</div>
+        </div>
+        <div class="counter__element">
+          <div class="counter__number">100 000</div>
+          <div class="div counter__descr">экземпляров</div>
+        </div>
+        <div class="counter__element">
+          <div class="counter__number">150</div>
+          <div class="div counter__descr">стран мира</div>
+        </div>
+        <div class="counter__element">
+          <div class="counter__number">18 000</div>
+          <div class="div counter__descr">бабочек представлены</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="smart-home__four-part">
+      <div class="container">
+        <div class="container smart-home__four-part_display">
+          <div class="smart-home__third-part_overlay-3"></div>
+          <button class="smart-home__third-part_btn smart-home__four-part_btn">Осмотреть виртуальную коллекцию</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="maps__img">
+    <div class="container">
+      <div class="maps">
+        <img src="./img/background/background_5_vector.png" alt="#" class="smart-home_5">
+        <div class="maps__block">
+          <div class="maps__block_name">Умный дом бабочек</div>
+          <div class="maps__block_descr">ул. Московское шоссе, д. 34, г. Самара, 443086
+            Телефон (приемная ректора): (846) 335-18-26
+            Факс: (846) 335-18-36
+            E-mail: ssau@ssau.ru</div>
+          <div class="maps__block_map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A44d01055fb25ee8859dd722a4630c1dd7426e07da22edf2a502ac51497c6fc59&amp;source=constructor"
+              width="561" height="281" frameborder="0"></iframe>
+          </div>
+
+        </div>
+        <div class="maps__block">
+          <div class="maps__block_name">Самарский университет</div>
+          <div class="maps__block_descr">ул. Московское шоссе, д. 34, г. Самара, 443086
+            Телефон (приемная ректора): (846) 335-18-26
+            Факс: (846) 335-18-36
+            E-mail: ssau@ssau.ru</div>
+          <div class="maps__block_map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A44d01055fb25ee8859dd722a4630c1dd7426e07da22edf2a502ac51497c6fc59&amp;source=constructor"
+              width="561" height="281" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+
+  </footer>
+
+
+
 
 
   <script src="js/main.js"></script>

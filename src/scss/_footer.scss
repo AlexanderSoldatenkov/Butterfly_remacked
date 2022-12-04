@@ -1,0 +1,11 @@
+.footer {
+  // position: absolute;
+  // left: 0.07%;
+  // right: -0.07%;
+  // top: 95.05%;
+
+  min-height: 135px;
+  background-color: $footer-background;
+  position: relative;
+  z-index: 3;
+}

@@ -6,10 +6,13 @@
 # testing
 /coverage
 
+
 # production
 /build
 /dist
 
+#configurations
+.editorconfig
 
 # misc
 .cache

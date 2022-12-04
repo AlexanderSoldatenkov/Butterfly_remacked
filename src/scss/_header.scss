@@ -291,12 +291,13 @@
     }
 
     &_btn {
+
       display: block;
       margin: 0 auto;
       margin-top: 257px;
       width: 332px;
       height: 61px;
-      z-index: 3;
+      z-index: 4;
 
       font-family: 'Montserrat';
       font-style: normal;
@@ -326,6 +327,7 @@
     &_btn {
       width: 434px;
       margin-top: 257px;
+      z-index: 4;
     }
   }
 }

@@ -11,37 +11,6 @@ const isProd = !isDev;
 
 const filename = (ext) => isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`;
 
-const optimization = () => {
-  const configObj = {
-    splitChunks: {
-      chunks: 'all'
-    }
-  };
-
-
-  return configObj;
-};
-
-const plugins = () => {
-  const basePlugins = [
-    new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/index.html'),
-      filename: 'index.html',
-      minify: {
-        collapseWhitespace: isProd
-      }
-    }),
-
-    new MiniCssExtractPlugin({
-      filename: `./css/${filename('css')}`
-    }),
-    
-  ];
-
-  
-
-  return basePlugins;
-};
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -58,8 +27,25 @@ module.exports = {
     hot: true,
     port: 3000,
   },
-  optimization: optimization(),
-  plugins: plugins(),
+  optimization: {
+    splitChunks: {
+    chunks: 'all'
+  }
+},
+  plugins: [
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/index.html'),
+      filename: 'index.html',
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+
+    new MiniCssExtractPlugin({
+      filename: `./css/${filename('css')}`
+    }),
+    
+  ],
   devtool: isProd ? false : 'source-map',
   module: {
     rules: [

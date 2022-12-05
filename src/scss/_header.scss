@@ -25,9 +25,15 @@
     display: flex;
     align-items: center;
     color: $second-font-color;
-    margin-right: 32px;
     text-decoration: none;
+
+    &_wrapper {
+      display: inline-flex;
+      margin-right: 32px;
+    }
   }
+
+
 
   &__logo {
     width: 298px;
@@ -267,7 +273,7 @@
     object-fit: cover;
     min-height: 362px;
     background: url("/img/background/background_2.png") no-repeat 100%/cover;
-    padding-top: 264px;
+    // padding-top: 264px;
     z-index: 3;
 
     &_overlay {
@@ -283,7 +289,7 @@
     &_overlay-3 {
       position: absolute;
       left: 0px;
-      top: 1755px;
+      top: 1776px;
       width: 857px;
       height: 166px;
       background-color: $square-background;
@@ -291,11 +297,13 @@
     }
 
     &_btn {
+
       display: block;
       margin: 0 auto;
+      margin-top: 257px;
       width: 332px;
       height: 61px;
-      z-index: 3;
+      z-index: 4;
 
       font-family: 'Montserrat';
       font-style: normal;
@@ -308,13 +316,16 @@
       box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.25);
       border-radius: 20px;
       border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
 
   }
 
   &__four-part {
-    padding-top: 232px;
     object-fit: cover;
     min-height: 362px;
     background: url("/img/background/background_3.png") no-repeat 100%/cover;
@@ -325,6 +336,8 @@
 
     &_btn {
       width: 434px;
+      margin-top: 257px;
+      z-index: 4;
     }
   }
 }
@@ -372,3 +385,77 @@
     color: $third-font-color;
   }
 }
+
+
+.maps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 70px;
+
+  &__img {
+    object-fit: cover;
+    min-height: 575px;
+    // background: url("/img/butterfly_patterns_wings_surface_insect_53689_1920x1080.jpg") no-repeat 100%/cover;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+
+    &_name {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 23px;
+      color: $third-font-color;
+    }
+
+
+    &_descr {
+      margin-top: 12px;
+      width: 384px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: $third-font-color;
+    }
+
+    &_map {
+      margin-top: 34px;
+      // width: 561px;
+      // height: 281px;
+      overflow: hidden;
+      // padding-bottom: 56.25%;
+      // position: relative;
+      // height: 0;
+
+      // iframe {
+      //   left: 0;
+      //   top: 0;
+      //   height: 100%;
+      //   width: 100%;
+      //   position: absolute;
+      // }
+    }
+  }
+}
+
+// .map-responsive {
+//   overflow: hidden;
+//   padding-bottom: 56.25%;
+//   position: relative;
+//   height: 0;
+// }
+
+// .map-responsive iframe {
+//   left: 0;
+//   top: 0;
+//   height: 100%;
+//   width: 100%;
+//   position: absolute;
+// }

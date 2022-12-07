@@ -1,0 +1,62 @@
+.vr-application {
+  &__h1 {
+
+    padding-top: 151px;
+    z-index: 3;
+    position: absolute;
+    width: 1048px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 67px;
+    line-height: 82px;
+    text-transform: uppercase;
+    color: $first-font-color;
+  }
+
+  &__block-2 {
+    object-fit: cover;
+    min-height: 593px;
+
+  }
+
+  &__descr {
+    padding-top: 72px;
+  }
+
+  &__descr-2 {
+    padding-top: 14px;
+  }
+
+  &__block-3 {
+    display: flex;
+    justify-content: center;
+    min-height: 503px;
+
+    &_header {
+      margin-top: 16px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      color: $third-font-color;
+    }
+  }
+
+  &__btn {
+    margin-top: 50px;
+  }
+
+  &__vector {
+    position: absolute;
+    left: 0;
+    top: 2179px;
+    z-index: -1;
+  }
+
+}
+
+#vr-application__video {
+  min-width: 418px;
+}

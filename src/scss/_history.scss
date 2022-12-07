@@ -37,6 +37,13 @@
   &__vector {
     top: 105px;
   }
+
+  &__vector-2 {
+    position: absolute;
+    right: 0;
+    top: 2142px;
+    z-index: -1;
+  }
 }
 
 .information {

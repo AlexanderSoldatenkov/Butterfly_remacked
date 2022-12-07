@@ -2,12 +2,142 @@
   padding: 0 15px;
 }
 
+@media (min-width: 320px) {
+  .container {
+    max-width: 300px;
+  }
+
+  #logo_full {
+    display: none;
+  }
+
+  #logo_400 {
+    display: block;
+  }
+
+  .smart-home_2 {
+    display: none;
+    // top: 567px;
+  }
+
+  .smart-home_3 {
+    display: none;
+  }
+
+  .navigation__menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navigation__block {
+    width: 85vw;
+  }
+
+  .navigation__logo_right {
+    display: none;
+  }
+
+  .smart-home__back {
+    width: 360px;
+    height: 110px;
+    top: 340px;
+
+  }
+
+  .smart-home__h2 {
+    font-size: 20px;
+    line-height: 24px;
+    width: 316px;
+    padding-top: 237px;
+  }
+
+  .smart-home__h1 {
+    padding-top: 131px;
+    font-size: 38px;
+    line-height: 46px;
+    width: 332px;
+  }
+
+  .smart-home__background {
+    min-height: 328px;
+  }
+
+  .smart-home__second-part_descr {
+    width: 332px;
+
+  }
+
+
+  #header_vector-2 {
+    display: none;
+  }
+
+}
+
+@media (min-width: 390px) {
+  .smart-home__back {
+    width: 414px;
+    height: 140px;
+    top: 395px;
+
+  }
+
+  .smart-home__h2 {
+    font-size: 24px;
+    line-height: 29px;
+    width: 458px;
+    padding-top: 299px;
+  }
+
+  .smart-home__h1 {
+    padding-top: 131px;
+    font-size: 48px;
+    line-height: 59px;
+    width: 490px;
+  }
+
+  .smart-home__background {
+    min-height: 415px;
+  }
+
+  #header_vector {
+    display: block;
+  }
+
+
+
+
+}
+
 
 @media (min-width: 575.98px) {
   .container {
     max-width: 540px;
     margin: auto;
     padding: 0;
+  }
+
+  #logo_400 {
+    display: none;
+  }
+
+  #logo_800 {
+    display: block;
+  }
+
+  .smart-home__second-part_descr {
+    width: 550px;
+  }
+
+}
+
+
+@media (min-width: 620px) {
+  .navigation__logo_right {
+    display: block;
   }
 }
 
@@ -21,11 +151,92 @@
   .container {
     max-width: 960px;
   }
+
+  #logo_full {
+    display: block;
+  }
+
+  #logo_800 {
+    display: none;
+  }
+
+  .smart-home_2 {
+    display: block;
+
+  }
+
+  .smart-home_3 {
+    display: block;
+  }
+
+  .navigation__block {
+    // width: 1250px;
+  }
+
+
+
+  .smart-home__back {
+    top: 441px;
+    width: 1100px;
+    height: 228px;
+  }
+
+  .smart-home__background {
+    min-height: 645px;
+  }
+
+  .smart-home__h2 {
+    padding-top: 347px;
+    font-size: 36px;
+    line-height: 44px;
+    width: 943px;
+  }
+
+  .smart-home__h1 {
+    padding-top: 242px;
+    font-size: 67px;
+    line-height: 82px;
+    width: 1048px;
+  }
+
+  #header_vector {
+    display: none;
+  }
+
+  #header_vector-2 {
+    display: block;
+  }
+
+  .smart-home__second-part_descr {
+    width: 645px;
+  }
 }
+
+@media (min-width: 1055px) {
+  // .navigation__menu {
+  //   display: flex;
+  // }
+
+  .hamburger {
+    display: none;
+  }
+
+
+
+}
+
 
 @media (min-width: 1199.98px) {
   .container {
     max-width: 1140px;
+  }
+
+
+}
+
+@media (min-width: 1250px) {
+  .navigation__menu {
+    display: flex;
   }
 }
 
@@ -35,8 +246,17 @@
   }
 }
 
+
+
 // @media (min-width: 1919.98px) {
 //   .container {
 //     max-width: 1440px;
+//   }
+// }
+
+
+// @media (max-width: 1300px) {
+//   .container {
+//     max-width: 1160px;
 //   }
 // }

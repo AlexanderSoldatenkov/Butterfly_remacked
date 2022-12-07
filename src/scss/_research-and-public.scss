@@ -2,6 +2,23 @@
   &__video {
     min-height: 418px;
 
+    &_play {
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: 152px;
+        margin-top: 71px;
+        border-top: 46px solid transparent;
+        border-left: 92px solid #FF0072;
+        border-bottom: 46px solid transparent;
+        z-index: 5;
+      }
+    }
+
     &_header {
       padding-top: 65px;
     }

@@ -3,8 +3,98 @@
 }
 
 @media (min-width: 320px) {
-  .container {
-    max-width: 300px;
+
+  // .container {
+  //   max-width: 300px;
+  // }
+
+  .smart-home_media {
+    display: none;
+  }
+
+  .smart-home__third-part {
+    background: url("/img/background/media/img_1.png") no-repeat 100%/cover;
+  }
+
+  .smart-home__four-part {
+    background: url("/img/background/media/img_2.png") no-repeat 100%/cover;
+  }
+
+  .maps__block_map iframe {
+    width: 390px;
+    height: 281px;
+  }
+
+  .maps__block_descr {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .smart-home__four-part_display {
+    display: block;
+  }
+
+  #maps__block {
+    margin-top: 65px;
+  }
+
+  .maps__img {
+    min-height: 1087px;
+  }
+
+  .maps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .smart-home_4 {
+    display: none;
+  }
+
+  .smart-home__four-part_btn {
+    width: 332px;
+  }
+
+  .smart-home_5 {
+    display: none;
+  }
+
+  .smart-home__third-part {
+    min-height: 396px;
+  }
+
+  .smart-home__third-part_btn {
+    margin-top: 65px;
+  }
+
+  .smart-home__four-part {
+    min-height: 396px;
+  }
+
+  .smart-home__third-part_h2 {
+    font-size: 33px;
+    line-height: 40px;
+    margin-top: 102px;
+    text-align: center;
+  }
+
+  .counter {
+    &__element:nth-child(2) {
+
+      margin-right: 61px;
+      margin-left: 40px;
+    }
+
+    &__element:nth-child(3) {
+      margin-left: 101px;
+      margin-right: 113px;
+
+    }
+  }
+
+  .counter {
+    // width: 328px;
+    min-height: 591px;
   }
 
   #logo_full {
@@ -67,7 +157,7 @@
 
   .smart-home__second-part_descr {
     width: 332px;
-
+    margin-bottom: 51px;
   }
 
 
@@ -112,12 +202,83 @@
 
 }
 
+@media (min-width: 519px) {
+  #smart-home__h2 {
+    margin-bottom: 30px;
+  }
+
+
+}
+
+@media (min-width: 560px) {
+  .counter {
+    width: auto;
+    min-height: 318px;
+  }
+}
 
 @media (min-width: 575.98px) {
   .container {
     max-width: 540px;
     margin: auto;
     padding: 0;
+  }
+
+  .smart-home_media {
+    display: block;
+  }
+
+  .smart-home_5 {
+    top: 1759px;
+    display: block;
+  }
+
+  .smart-home_2 {
+    display: block;
+    top: 564px;
+  }
+
+  .smart-home__third-part {
+    background: url("/img/background/background_2.png") no-repeat 100%/cover;
+  }
+
+  .smart-home__four-part {
+    background: url("/img/background/background_3.png") no-repeat 100%/cover;
+  }
+
+  .maps__block_descr {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .maps__block_map iframe {
+    width: 561px;
+    height: 281px;
+  }
+
+
+
+
+  .smart-home__third-part {
+    min-height: 210px;
+  }
+
+  .smart-home__third-part_btn {
+    margin-top: 29px;
+  }
+
+  .smart-home__four-part_btn {
+    width: 434px;
+  }
+
+  .smart-home__four-part {
+    min-height: 210px;
+  }
+
+  .smart-home__third-part_h2 {
+    font-size: 40px;
+    line-height: 49px;
+    margin-top: 46px;
   }
 
   #logo_400 {
@@ -130,6 +291,7 @@
 
   .smart-home__second-part_descr {
     width: 550px;
+    margin-bottom: 0;
   }
 
 }
@@ -139,18 +301,91 @@
   .navigation__logo_right {
     display: block;
   }
+
+
+  .counter {
+    &__element:nth-child(2) {
+
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__element:nth-child(3) {
+      margin-left: 0;
+      margin-right: 0;
+
+    }
+  }
+
 }
+
+
 
 @media (min-width: 767.98px) {
   .container {
     max-width: 720px;
   }
+
+  .counter {
+    width: 593px;
+    // min-height: 318px;
+    margin-left: 72px;
+  }
+
+  .smart-home__h1 {
+    width: 957px;
+  }
+
 }
+
+
 
 @media (min-width: 991.98px) {
   .container {
     max-width: 960px;
   }
+
+  .smart-home_media {
+    display: none;
+  }
+
+
+
+
+  .smart-home_4 {
+    display: block;
+  }
+
+  .counter {
+    width: auto;
+    min-height: 224px;
+    margin-left: 0;
+  }
+
+
+  .smart-home__third-part {
+    min-height: 362px;
+  }
+
+  .smart-home__four-part {
+    min-height: 362px;
+  }
+
+  .smart-home__third-part_btn {
+    margin-top: 65px;
+  }
+
+  .smart-home__third-part_h2 {
+    font-size: 67px;
+    line-height: 82px;
+    margin-top: 114px;
+  }
+
+  .smart-home__four-part {
+    min-height: 362px;
+  }
+
+
 
   #logo_full {
     display: block;
@@ -161,23 +396,16 @@
   }
 
   .smart-home_2 {
-    display: block;
-
+    top: 824px;
   }
 
   .smart-home_3 {
     display: block;
   }
 
-  .navigation__block {
-    // width: 1250px;
-  }
-
-
-
   .smart-home__back {
     top: 441px;
-    width: 1100px;
+    width: 867px;
     height: 228px;
   }
 
@@ -210,12 +438,14 @@
   .smart-home__second-part_descr {
     width: 645px;
   }
+
+
+
+
 }
 
 @media (min-width: 1055px) {
-  // .navigation__menu {
-  //   display: flex;
-  // }
+
 
   .hamburger {
     display: none;
@@ -223,6 +453,20 @@
 
 
 
+
+
+}
+
+
+@media (min-width: 1080px) {
+
+  .navigation__menu {
+    display: none;
+  }
+
+  .smart-home_5 {
+    top: 2277px;
+  }
 }
 
 
@@ -232,11 +476,45 @@
   }
 
 
+
+  .smart-home_5 {
+    top: 2007px;
+  }
+
+  .smart-home__back {
+    width: 1100px;
+  }
+
+  .smart-home__third-part_h2 {
+    width: 1015px;
+  }
+
+  .smart-home__third-part_h2 {
+    width: auto;
+  }
+
+  .maps {
+    flex-direction: row;
+  }
+
+  #maps__block {
+    margin-top: 0;
+  }
+
+  .maps__img {
+    min-height: 575px;
+  }
 }
 
 @media (min-width: 1250px) {
   .navigation__menu {
     display: flex;
+  }
+}
+
+@media (min-width: 1350px) {
+  .navigation__block {
+    width: 1250px;
   }
 }
 

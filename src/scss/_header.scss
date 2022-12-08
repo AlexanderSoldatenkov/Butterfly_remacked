@@ -131,7 +131,35 @@
       }
     }
   }
+
+  // Для разрешений больше 1920px
+  @media (min-width: 1920px) {}
+
+  @media (min-width: 1680px) and (max-width: 1920px) {}
+
+  @media (min-width: 1400px) and (max-width: 1680px) {}
+
+  @media (min-width: 1250px) and (max-width: 1400px) {}
+
+  @media (min-width: 1055px) and (max-width: 1250px) {}
+
+  @media (min-width: 998px) and (max-width: 1055px) {}
+
+  @media (min-width: 767px) and (max-width: 998px) {}
+
+  @media (min-width: 620px) and (max-width: 767px) {}
+
+  @media (min-width: 578px) and (max-width: 620px) {}
+
+  @media (min-width: 390px) and (max-width: 578px) {}
+
+  @media (max-width: 320px) and (max-width: 390px) {}
+
+  @media (max-width: 320px) {}
+
+  // Для разрешений меньше 320px
 }
+
 
 
 .smart-home {
@@ -160,14 +188,21 @@
     position: absolute;
     right: 0;
     top: 988px;
-    z-index: 4;
+    z-index: 2;
   }
 
   &_5 {
     position: absolute;
     left: 0;
     top: 2016px;
-    z-index: 2;
+    z-index: -1;
+  }
+
+  &_media {
+    position: absolute;
+    right: 0;
+    top: 929px;
+    z-index: 1;
   }
 
   &__background {
@@ -252,6 +287,8 @@
   }
 
   &__third-part {
+    display: flex;
+    flex-direction: column;
     position: relative;
     object-fit: cover;
     min-height: 362px;
@@ -279,11 +316,27 @@
       z-index: 1;
     }
 
+    &_h2 {
+      display: block;
+      margin: 0 auto;
+      margin-top: 114px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 67px;
+      line-height: 82px;
+      text-transform: uppercase;
+      // width: 1033px;
+      color: $first-font-color;
+
+      text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+    }
+
     &_btn {
 
       display: block;
       margin: 0 auto;
-      margin-top: 257px;
+      margin-top: 65px;
       width: 332px;
       height: 61px;
       z-index: 4;
@@ -309,17 +362,21 @@
   }
 
   &__four-part {
+    display: flex;
+    flex-direction: column;
     object-fit: cover;
     min-height: 362px;
     background: url("/img/background/background_3.png") no-repeat 100%/cover;
 
     &_display {
-      display: flex;
+      display: block;
+      z-index: 3;
+      position: relative;
     }
 
     &_btn {
       width: 434px;
-      margin-top: 257px;
+      margin-top: 65px;
       z-index: 4;
     }
   }
@@ -330,6 +387,7 @@
   // z-index: 2;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   min-height: 224px;

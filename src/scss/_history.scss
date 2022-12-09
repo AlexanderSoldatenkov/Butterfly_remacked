@@ -20,12 +20,23 @@
   }
 
   &__h2 {
+    width: 943px;
+    position: absolute;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: $first-font-color;
     top: 600px;
     z-index: 1;
     padding-top: 8px;
   }
 
   &__background {
+    position: absolute;
+    left: 0px;
     top: 403px;
     width: 1344px;
     height: 323px;

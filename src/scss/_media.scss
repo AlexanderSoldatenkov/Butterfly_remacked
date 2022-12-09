@@ -219,7 +219,7 @@
 
 @media (min-width: 575.98px) {
   .container {
-    max-width: 540px;
+    max-width: 659px;
     margin: auto;
     padding: 0;
   }
@@ -294,6 +294,15 @@
     margin-bottom: 0;
   }
 
+  .smart-home__h1 {
+
+    margin-left: 15px;
+  }
+
+  .smart-home__h2 {
+    margin-left: 15px;
+  }
+
 }
 
 
@@ -317,6 +326,8 @@
     }
   }
 
+
+
 }
 
 
@@ -334,8 +345,12 @@
 
   .smart-home__h1 {
     width: 957px;
+    margin-left: 0px;
   }
 
+  .smart-home__h2 {
+    margin-left: 0px;
+  }
 }
 
 

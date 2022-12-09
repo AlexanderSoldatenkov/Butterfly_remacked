@@ -13,10 +13,28 @@
     line-height: 82px;
     text-transform: uppercase;
     color: $first-font-color;
+
+
   }
 
+  &_hidden {
+    display: none;
+    padding-top: 313px;
+    z-index: 3;
+    position: absolute;
+    width: 1048px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 67px;
+    line-height: 82px;
+    text-transform: uppercase;
+    color: $first-font-color;
+  }
+
+
   &__background-1 {
-    height: 653px;
+    min-height: 653px;
     object-fit: cover;
     background: url("/img/catalog_background/background_1.png") no-repeat 100%/cover;
   }
@@ -199,4 +217,173 @@
     }
 
   }
+
+  // Для разрешений больше 1920px
+  @media (min-width: 1920px) {}
+
+  @media (min-width: 1680px) and (max-width: 1920px) {}
+
+  @media (min-width: 1400px) and (max-width: 1680px) {}
+
+  @media (min-width: 1250px) and (max-width: 1400px) {}
+
+  @media (min-width: 1100px) and (max-width: 1250px) {}
+
+  @media (min-width: 998px) and (max-width: 1100px) {
+    &__h1 {
+      font-size: 48px;
+      line-height: 59px;
+      padding-top: 277px;
+    }
+
+    &__background-1 {
+      min-height: 443px;
+    }
+
+    &__h2 {
+      display: none;
+    }
+  }
+
+  @media (min-width: 767px) and (max-width: 998px) {
+    &__h1 {
+      font-size: 48px;
+      line-height: 59px;
+      padding-top: 277px;
+    }
+
+    &__background-1 {
+      min-height: 443px;
+    }
+
+    &__h2 {
+      display: none;
+    }
+  }
+
+  @media (min-width: 620px) and (max-width: 767px) {
+    &__h1 {
+      margin-left: 15px;
+      font-size: 35px;
+      line-height: 59px;
+      padding-top: 277px;
+    }
+
+    &__background-1 {
+      min-height: 443px;
+    }
+
+    &__h2 {
+      display: none;
+    }
+  }
+
+  @media (min-width: 578px) and (max-width: 620px) {
+    &__h1 {
+      margin-left: 15px;
+      font-size: 35px;
+      line-height: 59px;
+      padding-top: 277px;
+    }
+
+    &__background-1 {
+      min-height: 443px;
+    }
+
+    &__h2 {
+      display: none;
+    }
+  }
+
+  @media (min-width: 390px) and (max-width: 578px) {
+    &__background {
+      display: none;
+    }
+
+    &__media-1 {
+      display: none;
+    }
+
+    &__h1 {
+      display: none;
+    }
+
+    &_hidden {
+      display: block;
+      font-size: 38px;
+      line-height: 46px;
+      padding-top: 27px;
+      color: $counter;
+      width: auto;
+    }
+
+
+    &__background-1 {
+      background-position: center;
+      background: url("/img/background/media/img_4.png") no-repeat 100%/cover;
+      min-height: 336px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 390px) {
+    &__background {
+      display: none;
+    }
+
+    &__media-1 {
+      display: none;
+    }
+
+    &__h1 {
+      display: none;
+    }
+
+    &_hidden {
+      display: block;
+      font-size: 38px;
+      line-height: 46px;
+      padding-top: 27px;
+      color: $counter;
+      width: auto;
+    }
+
+
+    &__background-1 {
+      background-position: center;
+      background: url("/img/background/media/img_4.png") no-repeat 100%/cover;
+      min-height: 336px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    &__background {
+      display: none;
+    }
+
+    &__media-1 {
+      display: none;
+    }
+
+    &__h1 {
+      display: none;
+    }
+
+    &_hidden {
+      display: block;
+      font-size: 38px;
+      line-height: 46px;
+      padding-top: 27px;
+      color: $counter;
+      width: auto;
+    }
+
+
+    &__background-1 {
+      background-position: center;
+      background: url("/img/background/media/img_4.png") no-repeat 100%/cover;
+      min-height: 336px;
+    }
+  }
+
+  // Для разрешений меньше 320px
 }

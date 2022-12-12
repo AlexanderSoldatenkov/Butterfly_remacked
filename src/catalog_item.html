@@ -69,7 +69,7 @@
   <section class="catalog">
     <div class="container">
       <div class="catalog-search">
-        <div class="catalog__block">
+        <div class="catalog-item__search-block">
           <input type="search" class="catalog-search__input" placeholder="Поиск" id="search" name="search">
           <ul class="catalog-search__results">
             <li>Бабочка Бабочка</li>
@@ -85,7 +85,9 @@
         <img src="./img/background/background_8_vector.png" alt="#" class="catalog-item__vector-2">
         <div class="catalog-item__block">
           <h1 class="catalog-item__h1">Troides helena</h1>
-          <img src="./img/catalog_item/main_img.png" alt="#" class="catalog-item__main-img">
+          <div class="catalog-item__img-div">
+            <img src="./img/catalog_item/main_img.png" alt="#" class="catalog-item__main-img">
+          </div>
           <div class="catalog-search__quotation_wrapper">
             <div class="catalog-item__descr">
               класс Insecta → подкласс Pterygota → инфракласс Neoptera → надотряд Holometabola → отряд Lepidoptera →
@@ -101,24 +103,44 @@
             крупными жёлтыми полями на задних крыльях. Половой диморфизм выражен относительно слабо. Самки крупнее
             самцов.
           </div>
-          <div class="catalog-search__slider_wrapper">
-            <div class="catalog-search__slider catalog-item__slider">
+          <div class="catalog-search__slider_wrapper-catalog">
+
+            <div class="catalog-search__slider">
               <img src="./img/catalog_slider/arrow_left.png" alt="#" class="catalog-search__slider_arrow-left">
               <div class="catalog-search__slider_block">
                 <img src="./img/catalog_slider/slide_1.png" alt="#" class="catalog-search__slider_img">
-
+                <div class="catalog-search__slider_descr">Название бабочки</div>
+                <a href="#" class="catalog-search__slider_ref">Подробнее>></a>
               </div>
               <div class="catalog-search__slider_block">
                 <img src="./img/catalog_slider/slide_2.png" alt="#" class="catalog-search__slider_img">
-
+                <div class="catalog-search__slider_descr">Название бабочки</div>
+                <a href="#" class="catalog-search__slider_ref">Подробнее>></a>
               </div>
               <div class="catalog-search__slider_block">
                 <img src="./img/catalog_slider/slide_3.png" alt=" #" class="catalog-search__slider_img">
-
+                <div class="catalog-search__slider_descr">Название бабочки</div>
+                <a href="#" class="catalog-search__slider_ref">Подробнее>></a>
               </div>
               <img src="./img/catalog_slider/arrow_right.png" alt="#" class="catalog-search__slider_arrow-right">
             </div>
+            <div class="catalog-search__slider_shadow"> </div>
+          </div>
+          <div class="catalog-search__slider_hidden-2">
+            <div class="catalog-search__slider_div">
+              <div class="catalog-search__slider" id="catalog-item__slider">
+                <img src="./img/catalog_slider/arrow_left.png" alt="#" class="catalog-search__slider_arrow-left">
 
+                <div class="catalog-search__slider_block">
+                  <img src="./img/catalog_slider/slide_2.png" alt="#" class="catalog-search__slider_img">
+                  <div class="catalog-search__slider_descr">Название бабочки</div>
+                  <a href="#" class="catalog-search__slider_ref">Подробнее>></a>
+                </div>
+
+                <img src="./img/catalog_slider/arrow_right.png" alt="#" class="catalog-search__slider_arrow-right">
+              </div>
+              <div class="catalog-search__slider_shadow"> </div>
+            </div>
           </div>
           <div class="catalog-item__description-item-2">
             <span>Распространение</span> <br>

@@ -27,6 +27,26 @@
     color: $second-font-color;
     text-decoration: none;
 
+
+    &_slash {
+      margin-left: 7px;
+      margin-right: 7px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      color: $second-font-color;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: $language-link;
+    }
+
     &_wrapper {
       display: inline-flex;
       margin-right: 32px;
@@ -65,7 +85,7 @@
     list-style-type: none;
     text-decoration: none;
     margin-top: 10px;
-    width: 100%;
+    width: 598px;
     display: flex;
     // align-items: center;
     flex-wrap: wrap;
@@ -73,8 +93,16 @@
 
     margin-left: 36px;
 
+    // &_div {
+    //   width: 645px;
+    // }
+
     &_item {
       margin-left: 15px;
+
+      &:nth-child(5) {
+        margin-left: 0px;
+      }
 
 
       a {
@@ -103,53 +131,36 @@
       }
     }
   }
+
+  // Для разрешений больше 1920px
+  @media (min-width: 1920px) {}
+
+  @media (min-width: 1680px) and (max-width: 1920px) {}
+
+  @media (min-width: 1400px) and (max-width: 1680px) {}
+
+  @media (min-width: 1250px) and (max-width: 1400px) {}
+
+  @media (min-width: 1055px) and (max-width: 1250px) {}
+
+  @media (min-width: 998px) and (max-width: 1055px) {}
+
+  @media (min-width: 767px) and (max-width: 998px) {}
+
+  @media (min-width: 620px) and (max-width: 767px) {}
+
+  @media (min-width: 578px) and (max-width: 620px) {}
+
+  @media (min-width: 390px) and (max-width: 578px) {}
+
+  @media (max-width: 320px) and (max-width: 390px) {}
+
+  @media (max-width: 320px) {}
+
+  // Для разрешений меньше 320px
 }
 
-// .smart-home {
-//   &__background {
-//     min-height: 645px;
-//     object-fit: cover;
-//     background: url("../img/background/background_1.png") no-repeat 100%/cover;
-//   }
 
-//   &__h1 {
-//     position: absolute;
-//     left: 66px;
-//     top: 354px;
-//     width: 863px;
-//     font-family: 'Montserrat', sans-serif;
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 67px;
-//     line-height: 82px;
-//     text-transform: uppercase;
-//     color: $first-font-color;
-//     z-index: 1;
-//   }
-
-//   &__h2 {
-//     width: 863px;
-//     position: absolute;
-//     left: 66px;
-//     top: 460px;
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 36px;
-//     line-height: 44px;
-//     text-transform: uppercase;
-//     color: $first-font-color;
-//   }
-
-//   &__back {
-//     position: absolute;
-//     left: 0px;
-//     top: 340px;
-//     width: 1100px;
-//     height: 228px;
-//     background-color: $square-background;
-//   }
-// }
 
 .smart-home {
   &_1 {
@@ -163,7 +174,7 @@
     position: absolute;
     left: 0;
     top: 824px;
-    z-index: 2;
+    z-index: -1;
   }
 
   &_3 {
@@ -177,14 +188,21 @@
     position: absolute;
     right: 0;
     top: 988px;
-    z-index: 4;
+    z-index: 2;
   }
 
   &_5 {
     position: absolute;
     left: 0;
     top: 2016px;
-    z-index: 2;
+    z-index: -1;
+  }
+
+  &_media {
+    position: absolute;
+    right: 0;
+    top: 929px;
+    z-index: 1;
   }
 
   &__background {
@@ -269,6 +287,8 @@
   }
 
   &__third-part {
+    display: flex;
+    flex-direction: column;
     position: relative;
     object-fit: cover;
     min-height: 362px;
@@ -296,11 +316,27 @@
       z-index: 1;
     }
 
+    &_h2 {
+      display: block;
+      margin: 0 auto;
+      margin-top: 114px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 67px;
+      line-height: 82px;
+      text-transform: uppercase;
+      // width: 1033px;
+      color: $first-font-color;
+
+      text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+    }
+
     &_btn {
 
       display: block;
       margin: 0 auto;
-      margin-top: 257px;
+      margin-top: 65px;
       width: 332px;
       height: 61px;
       z-index: 4;
@@ -326,17 +362,21 @@
   }
 
   &__four-part {
+    display: flex;
+    flex-direction: column;
     object-fit: cover;
     min-height: 362px;
     background: url("/img/background/background_3.png") no-repeat 100%/cover;
 
     &_display {
-      display: flex;
+      display: block;
+      z-index: 3;
+      position: relative;
     }
 
     &_btn {
       width: 434px;
-      margin-top: 257px;
+      margin-top: 65px;
       z-index: 4;
     }
   }
@@ -347,6 +387,7 @@
   // z-index: 2;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   min-height: 224px;
@@ -445,17 +486,96 @@
   }
 }
 
-// .map-responsive {
-//   overflow: hidden;
-//   padding-bottom: 56.25%;
-//   position: relative;
-//   height: 0;
-// }
+.dropdown {
+  &-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 
-// .map-responsive iframe {
-//   left: 0;
-//   top: 0;
-//   height: 100%;
-//   width: 100%;
-//   position: absolute;
-// }
+    a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    a:hover {
+      background-color: #ddd;
+    }
+  }
+
+  &:hover {
+    .dropdown-content {
+      display: block;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $third-font-color;
+      text-transform: uppercase;
+    }
+
+    .dropbtn {
+      background-color: #3e8e41;
+    }
+  }
+}
+
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  align-self: center;
+
+  height: 60%;
+  cursor: pointer;
+
+  &:hover {
+    .hamburger__hover {
+      background-color: $second-font-color;
+    }
+  }
+
+  // &::before {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   width: 2px;
+  //   height: 70px;
+  //   transform: translate(-21px, -16px);
+  //   background-color: #000;
+  // }
+
+
+
+  &__hover {
+    display: block;
+    background-color: #000;
+    width: 30px;
+    height: 3px;
+    margin-top: 8px;
+  }
+
+
+}
+
+#header_vector,
+#logo_800,
+#logo_400 {
+  display: none;
+}
+
+#logo_400 {
+  width: 170px;
+  height: 40px;
+}
+
+#logo_800 {
+  width: 207px;
+  height: 48px;
+}

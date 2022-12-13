@@ -12,49 +12,78 @@
     rel="stylesheet">
 
 
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/logo/logo_32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/logo/logo_16.png">
+
 </head>
 
 <body>
-
   <nav class="header__bg">
     <div class="container">
       <div class="navigation__block">
-        <img src="./img/logo/logo.png" alt="#" class="navigation__logo">
-        <ul class="navigation__menu">
-          <li class="navigation__menu_item"><a href="./index.html " class="navigation__menu_link">Главная</a></li>
-          <li class="navigation__menu_item"><a href="#" class="navigation__menu_link">О нас</a></li>
-          <li class="navigation__menu_item"><a href="./catalog.html" class="navigation__menu_link">Коллекция
-              бабочек</a></li>
-          <li class="navigation__menu_item"><a href="./catalog_item.html" class="navigation__menu_link">VR
-              приложение</a></li>
-          <li class="navigation__menu_item"><a href="./history.html" class="navigation__menu_link">Исследования и
-              публикации</a>
-          </li>
-          <li class="navigation__menu_item"><a href="#" class="navigation__menu_link">Контакты</a></li>
-        </ul>
+        <img src="./img/logo/logo.png" alt="#" class="navigation__logo" id="logo_full">
+        <img src="./img/logo/media_800.png" alt="#" class="navigation__logo" id="logo_800">
+        <img src="./img/logo/media_400.png" alt="#" class="navigation__logo" id="logo_400">
+        <div class="navigation__menu_div">
+          <ul class="navigation__menu">
+            <li class="navigation__menu_item"><a href="./index.html " class="navigation__menu_link">Главная</a></li>
+            <li class="navigation__menu_item"><a href="./history.html" class="navigation__menu_link">О нас</a></li>
+            <li class="navigation__menu_item"><a href="./catalog.html" class="navigation__menu_link">Коллекция
+                бабочек</a></li>
+            <li class="navigation__menu_item"><a href="./vr-application.html" class="navigation__menu_link">VR
+                приложение</a></li>
+            <li class="navigation__menu_item dropdown">
+              <div class="navigation__menu_item"><a href="./research-and-public.html"
+                  class="navigation__menu_link">Исследования и
+                  публикации</a>
+                <ul class="dropdown-content">
+                  <li><a href="./research-all.html">исследования</a></li>
+                  <li><a href="./catalog_item.html">научные поездки</a></li>
+                  <li><a href="./research.html">публикации</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__menu_item"><a href="./history.html" class="navigation__menu_link">Контакты</a></li>
+          </ul>
+        </div>
         <div class="navigation__logo_align">
           <div class="navigation__name_wrapper">
-            <a href="#" class="navigation__name">Ru|</a><a href="#" class="navigation__name">En</a>
+            <a href="#" class="navigation__name">Ru </a>
+            <div class="navigation__name_slash">|</div><a href="#" class="navigation__name"> En</a>
           </div>
           <img src="./img/logo/logo-right.png" class="navigation__logo_right">
+          <div id="vision" class="hamburger">
+            <div class="hamburger__hover"></div>
+            <div class="hamburger__hover"></div>
+            <div class="hamburger__hover"></div>
+          </div>
         </div>
+
       </div>
     </div>
 
+
+
   </nav>
+
 
   <div alt="#" class="history__background-1">
     <div class="container">
       <h1 class="history__h1">История <br>«Умного дома бабочек»</h1>
-      <div class="smart-home__back history__background"></div>
-      <h2 class="smart-home__h2 history__h2">Выставка бабочек <br> и зал виртуальной реальности</h2>
+
+      <div class="history__background"></div>
+      <h2 class="history__h2">Выставка бабочек <br> и зал виртуальной реальности</h2>
     </div>
-    <img src="./img/background/background_1_vector.png" alt="#" class="smart-home_1 history__vector">
+    <img src="./img/background/background_13_vector.png" alt="#" class="smart-home_1 history__vector">
+    <img src="./img/background/background_3_vector.png" alt="#" class="research-and-public__vector-2">
+    <img src="./img/background/background_14_vector.png" alt="#" class="history__vector-2">
+    <img src="./img/background/media/vector_3.png" alt="#" class="history__media-1">
   </div>
 
 
   <section class="information">
     <div class="container">
+      <h1 class="history__hidden">История «Умного дома бабочек»</h1>
       <div class="information__block" id="information__block-1">
         <div class="information__block_descr">Профессор Сергей Анатольевич Сачков собирал свою коллекцию бабочек еще со
           школьных лет. В шестом классе вместе с друзьями начал ловить бабочек руками и сачками - фамилия к этому
@@ -75,18 +104,22 @@
 
         </div>
         <div class="information__block_img-first">
-          <img src="./img/history_background/back_2.jpg" alt="#" class="information__block_img-1">
+          <div class="information__block_wrapper">
+            <img src="./img/history_background/back_2.jpg" alt="#" class="information__block_img-1">
 
-          <div class="information__block_shawdow-1"></div>
+            <div class="information__block_shawdow-1"></div>
+          </div>
         </div>
 
       </div>
       <img src="./img/background/background_2_vector.png" alt="#" class="smart-home_2 information__vector-1">
       <div class="information__block">
         <div class="information__block_img-second">
-          <img src="./img/history_background/back_3.jpg" alt="" class="information__block_img-2">
+          <div class="information__block_wrapper">
+            <img src="./img/history_background/back_3.jpg" alt="" class="information__block_img-2">
 
-          <div class="information__block_shawdow-2"></div>
+            <div class="information__block_shawdow-2"></div>
+          </div>
         </div>
         <div class="information__block_descr information__block_descr-2">Много лет назад коллекцию бабочек перевезли в
           Самарский университет вместе
@@ -99,6 +132,13 @@
           В ней представлены виды из Африки, Северной и Южной Америки, Азии, Европы. Коллекция занесена в реестр
           Росприроднадзора. Она является крупнейшей в Приволжском Федеральном округе и входит в пятерку самых полных
           коллекций Российской Федерации.
+        </div>
+        <div class="information__block_hidden">
+          <div class="information__block_wrapper">
+            <img src="./img/history_background/back_3.jpg" alt="" class="information__block_img-2">
+
+            <div class="information__block_shawdow-2"></div>
+          </div>
         </div>
 
       </div>
@@ -130,15 +170,17 @@
           студенты биологического факультета смогут делиться своими знаниями с гостями «Умного дома».
         </div>
         <div class="information__block_img-therd">
-          <img src="./img/history_background/back_4.jpg" alt="" class="information__block_img-3">
-          <div class="information__block_shawdow-3"></div>
+          <div class="information__block_wrapper">
+            <img src="./img/history_background/back_4.jpg" alt="" class="information__block_img-3">
+            <div class="information__block_shawdow-3"></div>
+          </div>
         </div>
       </div>
-      <div class="information__block information__block-4">
+      <div class="information__block-4">
         <img src="./img/history_background/back_5.jpg" alt="" class="information__block_img-4">
         <div class="information__block_img-four">
           <div class="information__block_descr information__block_descr-4">
-            Сергей Сачков<br><br>
+            <span> Сергей Сачков</span><br><br>
 
             Биография Сачкова С.А. ТЕКСТ 2.2<br>
             = готовится самим Сачковым =<br><br>
@@ -154,6 +196,28 @@
         </div>
 
       </div>
+    </div>
+    <div class="information__hidden-block">
+      <img src="./img/history_background/back_5.jpg" alt="" class="information__block_img-4">
+      <div class="information__block_img-four">
+        <!-- <div class="history__div"> -->
+        <div class="information__block_descr information__block_descr-4">
+          <span> Сергей Сачков</span><br><br>
+
+          Биография Сачкова С.А. ТЕКСТ 2.2<br>
+          = готовится самим Сачковым =<br><br>
+
+          с энтузиазмом воспринял идею оцифровать коллекцию бабочек и на основе этого создать мультимедийный музей с
+          интерактивными зонами, где с помощью очков виртуальной реальности можно будет рассмотреть в деталях полет
+          насекомых, а надев VR-перчатки, - взять в руки 3D-бабочку и ощутить взмах ее тончайших крыльев.
+          Интерактивные столы, наполненные фотографиями, представят основную часть коллекции.
+
+        </div>
+
+        <div class="information__block_shawdow-4"></div>
+        <!-- </div> -->
+      </div>
+
     </div>
   </section>
   <footer class="footer">

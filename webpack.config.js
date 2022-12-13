@@ -61,7 +61,34 @@ module.exports = {
         collapseWhitespace: isProd
       }
     }),
-
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/research.html'),
+      filename: 'research.html',
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/research-all.html'),
+      filename: 'research-all.html',
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/research-and-public.html'),
+      filename: 'research-and-public.html',
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/vr-application.html'),
+      filename: 'vr-application.html',
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
     new MiniCssExtractPlugin({
       filename: `./css/${filename('css')}`
     }),

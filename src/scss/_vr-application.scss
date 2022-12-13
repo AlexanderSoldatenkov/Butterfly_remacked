@@ -130,7 +130,51 @@
 
   @media (min-width: 1200px) and (max-width: 1400px) {}
 
-  @media (min-width: 1100px) and (max-width: 1200px) {}
+  @media (min-width: 1100px) and (max-width: 1200px) {
+    &__back {
+      width: 1077px;
+    }
+
+    &__vector-display {
+      display: none !important;
+    }
+
+    &__background {
+      min-height: 424px;
+    }
+
+    &__back {
+      top: 281px;
+      width: 492px;
+      height: 169px;
+      background: linear-gradient(180deg, #00B9FF 0%, rgba(0, 185, 255, 0) 95.05%), #FF0072;
+      mix-blend-mode: multiply;
+    }
+
+    &__h1 {
+      padding-top: 186px;
+      font-size: 48px;
+      line-height: 59px;
+      width: auto;
+    }
+
+    &__h2 {
+      display: none;
+    }
+
+    &__descr {
+      width: 90%;
+    }
+
+    &__slider {
+      display: none;
+    }
+
+    &__slider_hidden {
+      display: flex;
+
+    }
+  }
 
   @media (min-width: 998px) and (max-width: 1100px) {
     &__vector-display {
@@ -153,6 +197,7 @@
       padding-top: 186px;
       font-size: 48px;
       line-height: 59px;
+      width: auto;
     }
 
     &__h2 {
@@ -194,6 +239,7 @@
       padding-top: 186px;
       font-size: 48px;
       line-height: 59px;
+      width: auto;
     }
 
     &__h2 {
@@ -208,6 +254,14 @@
       display: none;
     }
 
+    &__hide-slide {
+      display: none;
+    }
+
+    &__slider_hidden-width {
+      width: 746px;
+    }
+
     &__slider_hidden {
       display: flex;
 
@@ -218,6 +272,8 @@
     &__vector-display {
       display: none !important;
     }
+
+
 
     &__background {
       min-height: 424px;
@@ -235,6 +291,7 @@
       padding-top: 186px;
       font-size: 48px;
       line-height: 59px;
+      width: auto;
     }
 
     &__h2 {
@@ -251,8 +308,47 @@
 
     &__slider_hidden {
       display: flex;
-
     }
+
+    &__hide-slide {
+      display: none;
+    }
+
+    &__slider_hidden-width {
+      width: 600px;
+    }
+
+    &__video {
+      min-height: 487px;
+
+      &_img {
+        object-fit: cover;
+        width: 421px;
+        height: 291px;
+      }
+
+      &_header {
+        padding-top: 58px;
+      }
+    }
+
+    &__wrapper {
+      &::before {
+        border-top: 40px solid transparent;
+        border-left: 63px solid $second-font-color;
+        border-bottom: 37px solid transparent;
+      }
+    }
+
+    &__descr-2 {
+      width: 90%;
+    }
+
+    &__block-3_header {
+      width: 94%;
+      text-align: center;
+    }
+
   }
 
   @media (min-width: 578px) and (max-width: 620px) {
@@ -276,6 +372,7 @@
       padding-top: 186px;
       font-size: 48px;
       line-height: 59px;
+      width: auto;
     }
 
     &__h2 {
@@ -293,6 +390,45 @@
     &__slider_hidden {
       display: flex;
 
+    }
+
+    &__hide-slide {
+      display: none;
+    }
+
+    &__slider_hidden-width {
+      width: 560px;
+    }
+
+    &__video {
+      min-height: 487px;
+
+      &_img {
+        object-fit: cover;
+        width: 421px;
+        height: 291px;
+      }
+
+      &_header {
+        padding-top: 58px;
+      }
+    }
+
+    &__wrapper {
+      &::before {
+        border-top: 40px solid transparent;
+        border-left: 63px solid $second-font-color;
+        border-bottom: 37px solid transparent;
+      }
+    }
+
+    &__descr-2 {
+      width: 90%;
+    }
+
+    &__block-3_header {
+      width: 94%;
+      text-align: center;
     }
   }
 
@@ -314,7 +450,7 @@
     }
 
     &__h1 {
-      width: 100%;
+      width: auto;
       padding-top: 212px;
       text-align: center;
       font-size: 38px;
@@ -391,7 +527,7 @@
     }
 
     &__h1 {
-      width: 100%;
+      width: auto;
       padding-top: 212px;
       text-align: center;
       font-size: 38px;
@@ -413,16 +549,24 @@
     }
 
     &__video {
-      min-height: 326px;
+      min-height: 378px;
 
       &_img {
-        width: 350px;
-        height: 215px;
+        object-fit: cover;
+        width: 300px;
+        height: 186px;
       }
 
       &_header {
-        padding-top: 21px;
+        padding-top: 54px;
+        font-size: 29px;
       }
+
+
+    }
+
+    &__slider {
+      display: none;
     }
 
     &__wrapper {
@@ -468,7 +612,7 @@
     }
 
     &__h1 {
-      width: 100%;
+      width: auto;
       padding-top: 212px;
       text-align: center;
       font-size: 38px;
@@ -490,16 +634,20 @@
     }
 
     &__video {
-      min-height: 326px;
+      min-height: 378px;
 
       &_img {
-        width: 350px;
-        height: 215px;
+        object-fit: cover;
+        width: 300px;
+        height: 186px;
       }
 
       &_header {
-        padding-top: 21px;
+        padding-top: 54px;
+        font-size: 29px;
       }
+
+
     }
 
     &__wrapper {

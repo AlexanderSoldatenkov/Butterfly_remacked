@@ -148,7 +148,7 @@
     padding-top: 131px;
     font-size: 38px;
     line-height: 46px;
-    width: 332px;
+    width: auto;
   }
 
   .smart-home__background {
@@ -186,7 +186,7 @@
     padding-top: 131px;
     font-size: 48px;
     line-height: 59px;
-    width: 490px;
+    width: auto;
   }
 
   .smart-home__background {
@@ -295,7 +295,7 @@
   }
 
   .smart-home__h1 {
-
+    width: auto;
     margin-left: 15px;
   }
 
@@ -346,6 +346,7 @@
   .smart-home__h1 {
     width: 957px;
     margin-left: 0px;
+    width: auto;
   }
 
   .smart-home__h2 {
@@ -439,7 +440,7 @@
     padding-top: 242px;
     font-size: 67px;
     line-height: 82px;
-    width: 1048px;
+    // width: 1048px;
   }
 
   #header_vector {
@@ -490,6 +491,9 @@
     max-width: 1140px;
   }
 
+  .smart-home__h1 {
+    width: 1048px;
+  }
 
 
   .smart-home_5 {
@@ -521,15 +525,28 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1280px) {
   .navigation__menu {
     display: flex;
+    width: 561px;
+
+    &_link {
+      font-size: 14px;
+    }
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1375px) {
   .navigation__block {
     width: 1250px;
+  }
+
+  .navigation__menu {
+    width: 598px;
+
+    &_link {
+      font-size: 16px;
+    }
   }
 }
 

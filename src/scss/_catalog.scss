@@ -245,9 +245,95 @@
 
   @media (min-width: 1400px) and (max-width: 1680px) {}
 
-  @media (min-width: 1250px) and (max-width: 1400px) {}
+  @media (min-width: 1200px) and (max-width: 1400px) {}
 
-  @media (min-width: 1100px) and (max-width: 1250px) {}
+  @media (min-width: 1100px) and (max-width: 1200px) {
+    &_vector {
+      display: none !important;
+    }
+
+    &-search {
+      justify-content: center;
+
+      &__gallary {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 46px;
+        margin-bottom: 90px;
+
+        &_img {
+          width: 365px;
+        }
+
+        &_wrapper {
+          flex-direction: row;
+          margin-left: 0;
+          margin-top: 23px;
+          width: 751px;
+        }
+      }
+
+      &__descr {
+        width: 430px;
+      }
+
+      &__quotation {
+        width: 692px;
+
+        &_shawdow {
+          width: 834px;
+          height: 230px;
+          transform: translate(62px, -185px);
+        }
+      }
+
+      &__results {
+        width: 296px;
+        height: 287px;
+      }
+
+      &__slider_hidden {
+        display: flex;
+        justify-content: center;
+      }
+
+      &__slider_wrapper-catalog {
+        display: none;
+      }
+
+      &__slider {
+        width: 825px;
+        margin-top: 73px;
+
+        &_img {
+          width: 223px;
+        }
+
+        &_shadow {
+          width: 834px;
+
+          transform: translate(-2px, -94px);
+        }
+      }
+    }
+
+
+
+    &__h1 {
+      font-size: 48px;
+      line-height: 59px;
+      padding-top: 277px;
+      width: auto;
+    }
+
+    &__background-1 {
+      min-height: 443px;
+    }
+
+    &__h2 {
+      display: none;
+    }
+  }
 
   @media (min-width: 998px) and (max-width: 1100px) {
     &_vector {
@@ -325,6 +411,7 @@
       font-size: 48px;
       line-height: 59px;
       padding-top: 277px;
+      width: auto;
     }
 
     &__background-1 {
@@ -410,6 +497,7 @@
       font-size: 48px;
       line-height: 59px;
       padding-top: 277px;
+      width: auto;
     }
 
     &__background-1 {
@@ -496,6 +584,7 @@
       font-size: 35px;
       line-height: 59px;
       padding-top: 277px;
+      width: auto;
     }
 
     &__background-1 {
@@ -582,6 +671,7 @@
       font-size: 35px;
       line-height: 59px;
       padding-top: 277px;
+      width: auto;
     }
 
     &__background-1 {

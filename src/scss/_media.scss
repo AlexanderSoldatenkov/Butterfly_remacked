@@ -2,6 +2,14 @@
   padding: 0 15px;
 }
 
+
+@media (min-width: 1px) and (max-width: 377px) {
+  .navigation__name_wrapper {
+    display: none;
+  }
+}
+
+
 @media (max-width: 320px) {
   .smart-home_media {
     display: none;
@@ -127,6 +135,8 @@
   .navigation__block {
     width: 85vw;
   }
+
+
 
   .navigation__logo_right {
     display: none;
@@ -382,6 +392,7 @@
   }
 
 
+
 }
 
 @media (min-width: 560px) {
@@ -389,6 +400,8 @@
     width: auto;
     min-height: 318px;
   }
+
+
 }
 
 @media (min-width: 575.98px) {

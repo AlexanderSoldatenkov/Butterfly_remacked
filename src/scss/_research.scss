@@ -230,7 +230,11 @@
 
   @media (min-width: 1400px) and (max-width: 1680px) {}
 
-  @media (min-width: 1200px) and (max-width: 1400px) {}
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    &__background {
+      width: 810px;
+    }
+  }
 
   @media (min-width: 1100px) and (max-width: 1200px) {
     &__background-1 {
@@ -329,6 +333,7 @@
       padding-top: 306px;
       font-size: 31px;
       line-height: 38px;
+      width: auto;
     }
 
     &__second-part_descr {
@@ -351,7 +356,7 @@
     }
 
     &__background {
-      width: 645px;
+      width: 493px;
       height: 220px;
     }
 
@@ -360,16 +365,19 @@
       padding-top: 0;
       font-size: 48px;
       line-height: 59px;
+      margin-left: 15px;
     }
 
     &__h2 {
       padding-top: 306px;
       font-size: 31px;
       line-height: 38px;
+      width: auto;
+      margin-left: 15px;
     }
 
     &__second-part_descr {
-      width: 716px;
+      width: 90%;
     }
 
     &__slider_media-hide {
@@ -388,7 +396,7 @@
     }
 
     &__background {
-      width: 645px;
+      width: 493px;
       height: 220px;
     }
 
@@ -397,16 +405,19 @@
       padding-top: 0;
       font-size: 48px;
       line-height: 59px;
+      margin-left: 15px;
     }
 
     &__h2 {
       padding-top: 306px;
       font-size: 31px;
       line-height: 38px;
+      width: auto;
+      margin-left: 15px;
     }
 
     &__second-part_descr {
-      width: 716px;
+      width: 90%;
     }
 
     &__slider_media-hide {
@@ -435,12 +446,15 @@
       padding-top: 0;
       font-size: 35px;
       line-height: 43px;
+      margin-left: 15px;
     }
 
     &__h2 {
       padding-top: 206px;
       font-size: 26px;
       line-height: 32px;
+      width: auto;
+      margin-left: 15px;
     }
 
     &__second-part_descr {
@@ -473,12 +487,15 @@
       padding-top: 0;
       font-size: 35px;
       line-height: 43px;
+      margin-left: 15px;
     }
 
     &__h2 {
       padding-top: 206px;
       font-size: 26px;
       line-height: 32px;
+      width: auto;
+      margin-left: 15px;
     }
 
     &__second-part_descr {
@@ -511,12 +528,15 @@
       padding-top: 0;
       font-size: 35px;
       line-height: 43px;
+      margin-left: 15px;
     }
 
     &__h2 {
       padding-top: 206px;
       font-size: 26px;
       line-height: 32px;
+      width: auto;
+      margin-left: 15px;
     }
 
     &__second-part_descr {
